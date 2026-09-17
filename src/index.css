@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide standard layout panels */
+  header, 
+  section.print\:hidden,
+  footer,
+  div.print\:hidden,
+  button,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Force background colors to be white and text to be black */
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+    line-height: 1.3;
+  }
+
+  /* Ensure tables print borders correctly */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  td, th {
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    padding: 6px !important;
+  }
+
+  /* Prevent page-breaks inside card questions */
+  .print\:break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Outer page setup */
+  @page {
+    size: A4 portrait;
+    margin: 1.2cm 1.2cm 1.2cm 1.2cm;
+  }
+}

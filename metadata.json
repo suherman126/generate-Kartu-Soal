@@ -1,0 +1,6 @@
+{
+  "name": "Pembuat Kartu Soal AI",
+  "description": "Asisten khusus guru SMP untuk meracik Kartu Soal, Kunci Jawaban, dan Pedoman Penskoran berbasis Tujuan Pembelajaran Kurikulum Merdeka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
