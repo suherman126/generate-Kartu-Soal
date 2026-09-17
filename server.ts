@@ -226,4 +226,5 @@ async function start() {
   });
 }
 
-start();
+// start();
+export default app;
